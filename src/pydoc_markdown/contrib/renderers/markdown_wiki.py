@@ -47,6 +47,9 @@ class MarkdownWikiRenderer(MarkdownRenderer):
     #: Render type hints for data elements in the header. Defaults to `True`
     render_typehint_in_data_header: bool = True
 
+    #: Creates a .order file which defines the wiki page order
+    page_order: List[str] = dataclasses.field(default_factory=List[str])
+
     #: The pages to render into the output directory.
     pages: Pages[Page] = dataclasses.field(default_factory=Pages)
 
@@ -68,3 +71,7 @@ class MarkdownWikiRenderer(MarkdownRenderer):
                 continue
 
             item.page.render(filename, modules, self, self._context.directory)
+
+        with open(os.path.join(self.output_directory, ".order"), "w") as order_file:
+            for page in self.page_order:
+                order_file.write(page + "\n")

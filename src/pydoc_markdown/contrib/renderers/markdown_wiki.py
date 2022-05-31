@@ -54,7 +54,7 @@ class MarkdownWikiRenderer(MarkdownRenderer):
                     os.remove(os.path.join(sub_dir, file))
 
         for item in self.pages.iter_hierarchy():
-            filename = item.filename(self.content_dir, ".md")
+            filename = item.filename(self.output_directory, ".md")
             if not filename:
                 continue
             if not item.page.has_content():

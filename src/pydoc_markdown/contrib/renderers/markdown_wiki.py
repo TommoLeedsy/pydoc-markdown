@@ -40,6 +40,13 @@ class MarkdownWikiRenderer(MarkdownRenderer):
     #: again. Defaults to `True`.
     clean_render: bool = True
 
+    #: If enabled, inserts anchors before Markdown headers to ensure that
+    #: links to the header work. Defaults to `False`.
+    insert_header_anchors: bool = False
+
+    #: Render type hints for data elements in the header. Defaults to `True`
+    render_typehint_in_data_header: bool = True
+
     #: The pages to render into the output directory.
     pages: Pages[Page] = dataclasses.field(default_factory=Pages)
 

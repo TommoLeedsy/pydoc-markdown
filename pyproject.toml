@@ -70,6 +70,7 @@ sphinx = "pydoc_markdown.contrib.processors.sphinx:SphinxProcessor"
 [tool.poetry.plugins."pydoc_markdown.interfaces.Renderer"]
 hugo = "pydoc_markdown.contrib.renderers.hugo:HugoRenderer"
 markdown = "pydoc_markdown.contrib.renderers.markdown:MarkdownRenderer"
+markdown-wiki = "pydoc_markdown.contrib.renderers.markdown_wiki:MarkdownWikiRenderer"
 mkdocs = "pydoc_markdown.contrib.renderers.mkdocs:MkdocsRenderer"
 docusaurus = "pydoc_markdown.contrib.renderers.docusaurus:DocusaurusRenderer"
 jinja2 = "pydoc_markdown.contrib.renderers.jinja2:Jinja2Renderer"

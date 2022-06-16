@@ -14,24 +14,24 @@ logger = logging.getLogger(__name__)
 @dataclasses.dataclass
 class MarkdownWikiRenderer(MarkdownRenderer):
     """
-        Produces Markdown files in a layout compatible with [markdown wikis][0]
+    Produces Markdown files in a layout compatible with [markdown wikis][0]
 
-        Example configuration:
+    Example configuration:
 
-        ```yaml
-        renderer:
-          type: mkdocs
-          pages:
-            - title: Home
-              name: index
-              source: README.md
-            - title: API Documentation
-              contents:
-                - '*'
-        ```
+    ```yaml
+    renderer:
+      type: markdown-wiki
+      pages:
+        - title: Home
+          name: index
+          source: README.md
+        - title: API Documentation
+          contents:
+            - '*'
+    ```
 
-        ### Options
-        """
+    ### Options
+    """
 
     #: The output directory for the generated Markdown files. Defaults to `docs`.
     output_directory: str = "docs"

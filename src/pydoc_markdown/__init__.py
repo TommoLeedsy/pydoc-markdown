@@ -45,7 +45,7 @@ from pydoc_markdown.interfaces import Builder, Context, Loader, Processor, Rende
 from pydoc_markdown.util import ytemplate
 
 __author__ = "Niklas Rosenstein <rosensteinniklas@gmail.com>"
-__version__ = "4.6.3"
+__version__ = "4.6.4"
 
 logger = logging.getLogger(__name__)
 
@@ -110,7 +110,7 @@ class PydocMarkdown:
             data = arg
 
         unknown_keys = A.collect_unknowns()
-        result = databind.json.new_mapper().deserialize(data, type(self), filename=filename, settings=[unknown_keys()])
+        result = databind.json.new_mapper().deserialize(data, type(self), filename=filename, settings=[unknown_keys()])  # type: ignore[arg-type]  # noqa: E501  # Bad databind typehint
         vars(self).update(vars(result))
 
         for loc, keys in unknown_keys:

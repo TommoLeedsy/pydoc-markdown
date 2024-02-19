@@ -58,7 +58,6 @@ def load(
     yaml_code = []
     it = iter(file_)
     for line in it:
-
         # Parse Python code blocks.
         if line.startswith("#@"):
             block_lines = [line[2:]]
@@ -78,7 +77,7 @@ def load(
 
         yaml_code.append(line)
 
-    return yaml.load("".join(yaml_code), Loader)
+    return yaml.load("".join(yaml_code), Loader or yaml.Loader)
 
 
 class Attributor:

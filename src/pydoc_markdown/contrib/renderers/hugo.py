@@ -35,18 +35,18 @@ import tempfile
 import typing as t
 from urllib.parse import urljoin, urlparse
 
-import databind.core.annotations as A
 import docspec
 import requests
 import tomli_w
 import typing_extensions as te
 import yaml
+from databind.core import Remainder
 from nr.util.fs import chmod
 
 from pydoc_markdown.contrib.renderers.markdown import MarkdownRenderer
 from pydoc_markdown.interfaces import Builder, Context, Renderer, Resolver, Server
 from pydoc_markdown.util.knownfiles import KnownFiles
-from pydoc_markdown.util.pages import Page, Pages
+from pydoc_markdown.util.pages import GenericPage, Page, Pages
 
 logger = logging.getLogger(__name__)
 
@@ -59,7 +59,7 @@ class GetHugo:
 
 
 @dataclasses.dataclass
-class HugoPage(Page["HugoPage"]):
+class HugoPage(GenericPage["HugoPage"]):
     """
     A subclass of #Page which adds Hugo-specific overrides.
 
@@ -155,9 +155,8 @@ class HugoConfig:
     #: This field collects all remaining options that do not match any of the above
     #: and will be forwarded directly into the Hugo `config.yaml` when it is rendered
     #: into the build directory.
-    additional_options: te.Annotated[t.Dict[str, t.Any], A.fieldinfo(flat=True)] = dataclasses.field(
-        default_factory=dict
-    )
+    # TODO(@NiklasRosenstein): Test if this still works as expected.
+    additional_options: te.Annotated[t.Dict[str, t.Any], Remainder()] = dataclasses.field(default_factory=dict)
 
     def to_toml(self, fp: t.TextIO) -> None:
         data = self.additional_options.copy()
@@ -416,7 +415,7 @@ def install_hugo(to: str, version: str | None = None, extended: bool = True) -> 
             shutil.copyfileobj(requests.get(files[filename], stream=True).raw, fp)
         with tarfile.open(path) as archive:
             with open(to, "wb") as fp:
-                shutil.copyfileobj(t.cast(t.IO[bytes], archive.extractfile("hugo")), t.cast(t.IO[bytes], fp))
+                shutil.copyfileobj(t.cast(t.IO[bytes], archive.extractfile("hugo")), t.cast(t.IO[bytes], fp))  # type: ignore[misc]  # See https://github.com/python/mypy/issues/15031  # noqa: E501
 
     chmod.update(to, "+x")
     logger.info('Hugo v%s installed to "%s"', version, to)

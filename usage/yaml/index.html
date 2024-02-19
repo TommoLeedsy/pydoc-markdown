@@ -9,23 +9,25 @@
       
       
       
-        <link rel="prev" href="../changelog/">
+        <link rel="prev" href="../cli-and-api/">
       
       
+        <link rel="next" href="../novella/">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
       
-        <title>Contributing - Pydoc Markdown</title>
+        <title>YAML Configuration - Pydoc Markdown</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#contributing-to-pydoc-markdown" class="md-skip">
+        <a href="#yaml-configuration" class="md-skip">
           Skip to content
         </a>
       
@@ -84,7 +86,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Pydoc Markdown" class="md-header__button md-logo" aria-label="Pydoc Markdown" data-md-component="logo">
+    <a href="../.." title="Pydoc Markdown" class="md-header__button md-logo" aria-label="Pydoc Markdown" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -104,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Contributing
+              YAML Configuration
             
           </span>
         </div>
@@ -191,7 +193,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Pydoc Markdown" class="md-nav__button md-logo" aria-label="Pydoc Markdown" data-md-component="logo">
+    <a href="../.." title="Pydoc Markdown" class="md-nav__button md-logo" aria-label="Pydoc Markdown" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -221,7 +223,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -238,8 +240,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -257,11 +261,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -275,7 +279,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Usage
@@ -289,7 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../usage/cli-and-api/" class="md-nav__link">
+      <a href="../cli-and-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -307,10 +311,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../usage/yaml/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    YAML Configuration
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -319,6 +343,98 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#yaml-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      YAML Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyproject-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      PyProject Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml-preprocessing" class="md-nav__link">
+    <span class="md-ellipsis">
+      YAML Preprocessing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loaders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loaders
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#renderer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Renderer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hooks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-your-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing your Configuration
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -331,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../usage/novella/" class="md-nav__link">
+      <a href="../novella/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -405,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/hugo/" class="md-nav__link">
+      <a href="../../examples/hugo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/readthedocs/" class="md-nav__link">
+      <a href="../../examples/readthedocs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -500,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/cli/" class="md-nav__link">
+      <a href="../../api/cli/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -549,7 +665,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../api/pydoc_markdown/" class="md-nav__link ">
+            <a href="../../api/pydoc_markdown/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -582,7 +698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/pydoc_markdown/interfaces/" class="md-nav__link">
+      <a href="../../api/pydoc_markdown/interfaces/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -603,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/pydoc_markdown/loaders/" class="md-nav__link">
+      <a href="../../api/pydoc_markdown/loaders/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -624,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/pydoc_markdown/processors/" class="md-nav__link">
+      <a href="../../api/pydoc_markdown/processors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -694,7 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/pydoc_markdown/renderers/docusaurus/" class="md-nav__link">
+      <a href="../../api/pydoc_markdown/renderers/docusaurus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -715,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/pydoc_markdown/renderers/hugo/" class="md-nav__link">
+      <a href="../../api/pydoc_markdown/renderers/hugo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -736,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/pydoc_markdown/renderers/jinja2/" class="md-nav__link">
+      <a href="../../api/pydoc_markdown/renderers/jinja2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -757,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/pydoc_markdown/renderers/markdown/" class="md-nav__link">
+      <a href="../../api/pydoc_markdown/renderers/markdown/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -778,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/pydoc_markdown/renderers/mkdocs/" class="md-nav__link">
+      <a href="../../api/pydoc_markdown/renderers/mkdocs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -819,10 +935,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -838,11 +952,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -856,7 +970,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Other
@@ -870,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../changelog/" class="md-nav__link">
+      <a href="../../changelog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -888,30 +1002,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Contributing
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -920,44 +1014,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pull-request-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pull request requirements
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#changelog-entries" class="md-nav__link">
-    <span class="md-ellipsis">
-      Changelog entries
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -997,18 +1053,72 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pull-request-requirements" class="md-nav__link">
+  <a href="#yaml-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Pull request requirements
+      YAML Example
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#changelog-entries" class="md-nav__link">
+  <a href="#pyproject-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Changelog entries
+      PyProject Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yaml-preprocessing" class="md-nav__link">
+    <span class="md-ellipsis">
+      YAML Preprocessing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loaders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loaders
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#renderer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Renderer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hooks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-your-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing your Configuration
     </span>
   </a>
   
@@ -1032,30 +1142,143 @@
   
 
 
-<h1 id="contributing-to-pydoc-markdown">Contributing to Pydoc-Markdown</h1>
-<p>Contributions to Pydoc-Markdown are very welcome!</p>
-<p>If you want to talk about a potential contribution before investing any time, please do create a new topic on
-<a href="https://github.com/NiklasRosenstein/pydoc-markdown/blob/develop/.changelog/_unreleased.toml">GitHub Discussions</a>.</p>
-<h2 id="pull-request-requirements">Pull request requirements</h2>
+<p><a id="yaml-config"></a></p>
+<h1 id="yaml-configuration">YAML Configuration</h1>
+<p>Pydoc-Markdown can be configured with using via a YAML file. By default, the CLI will look for a file
+called <code>pydoc-markdown.yaml</code> (or <code>.yml</code>) in the current working directory. (Note that the configuration
+is not read from file when using the <code>-m,--module</code>, <code>-p,--package</code> and other options that are intended
+for invoking Pydoc-Markdown without a configuration file).</p>
+<blockquote>
+<p><strong>Tip</strong>: The <code>--bootstrap</code> and <code>--bootstrap-mkdocs</code> options can be used to write a template configuration file.</p>
+</blockquote>
+<p>If you use the YAML configuration, the configuration file is pre-processed with a <a href="https://get-ytt.io/">YTT</a>-like templating
+language (see <a href="#yaml-preprocessing">YAML Preprocessing</a>).</p>
+<p>The configuration contains of four main sections:</p>
 <ul>
-<li>Please look to adhere to the existing code style (2-space indendation, 120 character line length limit)</li>
-<li>Pull requests should contain at least one new changelog entry unless the change is trivial (see below for details)</li>
+<li><code>loaders</code>: A list of plugins that load API objects, for example from Python source files. The
+  default configuration defines just a <code>python</code> loader.</li>
+<li><code>processors</code>: A list of plugins that process API objects to modify their docstrings (e.g. to
+  adapt them from a documentation format to Markdown or to remove items that should not be
+  rendered into the documentation). The default configuration defines the <code>filter</code>, <code>smart</code> and
+  <code>crossref</code> processors in that order.</li>
+<li><code>renderer</code>: A plugin that produces the output files. The default configuration defines the
+  <code>markdown</code> renderer (which by default will render a single file to stdout).</li>
+<li><code>hooks</code>: Configuration for commands that will be executed before and after rendering.</li>
 </ul>
-<h2 id="changelog-entries">Changelog entries</h2>
-<p>Pydoc-Markdown uses <a href="https://niklasrosenstein.github.io/slap/">Slam</a> to manage changelogs. You should use the Slam CLI to add a new changelog entry, otherwise
-you need to manually generate a UUID-4.</p>
-<div class="highlight"><pre><span></span><code>$ slap changelog add -t &lt;type&gt; -d &lt;changelog message&gt; [--issue &lt;issue_url&gt;]
+<h3 id="yaml-example">YAML Example</h3>
+<div class="highlight"><pre><span></span><code><span class="nt">loaders</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span>
+<span class="w">  </span><span class="nt">search_path</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">../src</span><span class="p p-Indicator">]</span>
+<span class="nt">renderer</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs</span>
+<span class="w">  </span><span class="nt">pages</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">API Documentation</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index</span>
+<span class="w">    </span><span class="nt">contents</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">school.*</span>
 </code></pre></div>
-<p>After you create the pull request, GitHub Actions will take care of injecting the PR URL into the changelog entry.</p>
+<h3 id="pyproject-example">PyProject Example</h3>
+<div class="highlight"><pre><span></span><code><span class="k">[[tool.pydoc-markdown.loaders]]</span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;python&quot;</span>
+<span class="n">search_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;../src&quot;</span><span class="w"> </span><span class="p">]</span>
+
+<span class="k">[tool.pydoc-markdown.renderer]</span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;mkdocs&quot;</span>
+
+<span class="k">[[tool.pydoc-markdown.renderer.pages]]</span>
+<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;API Documentation&quot;</span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;index&quot;</span>
+<span class="n">contents</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;school.*&quot;</span><span class="w"> </span><span class="p">]</span>
+</code></pre></div>
+<h2 id="yaml-preprocessing">YAML Preprocessing</h2>
+<blockquote>
+<p><em>New in Pydoc-Markdown 3.3.0. See also <code>pydoc_markdown.util.ytemplate</code></em></p>
+</blockquote>
+<p>Pydoc-Markdown performs very basic pre-processing on the YAML configuration before it is
+deserialized. The format is similar to that of <a href="https://get-ytt.io/">YTT</a>, but supports only a subset of the
+features and logic is interpreted as actual Python code.</p>
+<p>Supports preprocessing features:</p>
+<ul>
+<li><code>def</code> blocks to define a Python function (requires an <code>end</code> keyword, encapsulating YAML
+  code into the function definition is not supported)</li>
+<li>Value substitution</li>
+</ul>
+<p>Check out the <a href="../../examples/hugo/#hugo-baseurl">Read the Docs/Hugo baseURL</a> documentation for an
+example.</p>
+<h2 id="loaders">Loaders</h2>
+<p>Loaders are configured in the <code>$.loaders</code> section of the Pydoc-Markdown configuration file.
+The key must be a list of loader definitions. Currently there is only the
+<a href="../api-documentation/loaders#pydoc_markdown.contrib.loaders.python.PythonLoader">Python Loader</a>.</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">loaders</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">loadertype1</span>
+<span class="w">  </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">value</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">loadertype2</span>
+</code></pre></div>
+<p>If no loaders are specified, the Python loader is used by default.</p>
+<h2 id="processors">Processors</h2>
+<p>Similar to the Loaders, the <code>$.processors</code> section expects a list of processor definitions.
+If no processors are defined, the <code>filter</code>, <code>smart</code> and <code>crossref</code> processors are used (in
+that order). Many processors do not have any additional options.</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">processors</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">filter</span>
+<span class="w">  </span><span class="nt">documented_only</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">smart</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">crossref</span>
+</code></pre></div>
+<h2 id="renderer">Renderer</h2>
+<p>The <code>$.renderer</code> defines the renderer to use when running <code>pydoc-markdown</code> without arguments.
+Some renderers support the <code>--server</code> option, which allows a live-preview of the documentation.
+The default renderer is the <a href="../api-documentation/renderers/markdown">Markdown renderer</a> which
+will print the result to the terminal.</p>
+<p>Other renderers may produce files on disk in a layout that conforms with the static site generator
+that they aim to support.</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">renderer</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs</span>
+<span class="w">  </span><span class="nt">pages</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">API Documentation</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">index</span>
+<span class="w">    </span><span class="nt">contents</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">school.*</span>
+</code></pre></div>
+<h2 id="hooks">Hooks</h2>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">hooks</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">pre-render</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">generate-changelog &gt;docs/CHANGELOG.md</span>
+</code></pre></div>
+<p>Allows you to specify shell commands that will be execute before or after the render step.</p>
+<p><strong>Available keys</strong></p>
+<ul>
+<li><code>$.hooks.pre-render</code></li>
+<li><code>$.hooks.post-render</code></li>
+</ul>
+<h2 id="testing-your-configuration">Testing your Configuration</h2>
+<p>You can test the configuration of your loaders using the <code>pydoc-markdown --dump</code> option. Combine
+this with <code>docpspec -m --dump-tree</code> to get a full formatted list tree of all API objects that
+Pydoc-Markdown has discovered, after applying all processors. You can disable processors by
+adding the <code>--without-processors</code> function.</p>
+<div class="highlight"><pre><span></span><code>$ pydoc-markdown --dump | docspec -m --dump-tree
+module school._class
+| class Class
+| | data topic
+| | data teacher
+module school._person
+| class Person
+| | data name
+| | data age
+module school._pupil
+| class Pupil
+[ ... ]
+</code></pre></div>
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -1102,10 +1325,10 @@ you need to manually generate a UUID-4.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
     
   </body>
